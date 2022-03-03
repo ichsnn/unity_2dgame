@@ -15,7 +15,8 @@ public class TopEnemyDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(enemy.transform.position.x, transform.position.y, transform.position.z);
+        print(transform.position.y);
+        transform.position = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 0.9f, transform.position.z);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
