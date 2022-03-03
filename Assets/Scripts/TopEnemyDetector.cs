@@ -15,7 +15,6 @@ public class TopEnemyDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(transform.position.y);
         transform.position = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 0.9f, transform.position.z);
     }
 
@@ -23,6 +22,8 @@ public class TopEnemyDetector : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            // add score
+            GameManager._instance._time += 5;
             enemy.GetComponent<SpriteRenderer>().flipY = true;
             enemy.GetComponent<Transform>().rotation.Set(0, 0, 0, 0);
             enemy.GetComponent<Collider2D>().enabled = false;

@@ -23,6 +23,11 @@ public class PlayerController : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal");
         verticalMove = Input.GetAxisRaw("Vertical");
+
+        if(transform.position.y <= -5f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void FixedUpdate()
@@ -55,6 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.collider.tag == "Enemy")
         {
+            GameManager._instance.ShowGameOver();
             Destroy(gameObject);
         }
     }
