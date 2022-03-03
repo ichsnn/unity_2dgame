@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b7068bf255ecf745aed04cc865dcca9
+guid: 1416b4ff09666ca4bb28997397ed0c89
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,11 +116,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AmongUsRed_1
+      name: CapsuleRed_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 12
+        x: 5
+        y: 3
         width: 21
         height: 26
       alignment: 0
@@ -130,92 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10b22ea28f4a456468cdb96f5036eb6c
-      internalID: 559170318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmongUsRed_2
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 12
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3742fb5587468514099a53cb2ada6616
-      internalID: 109055221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmongUsRed_3
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 12
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19ffbf0e16d04c94f9a321a4b85bb28e
-      internalID: 1305076220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmongUsRed_4
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 12
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b1d7eb4f2ee60b419575bac276756d9
-      internalID: -215105613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AmongUsRed_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 12
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c5f4eccc64b0a040aa49b4c9f6e29fd
-      internalID: -173827784
+      spriteID: 0c0d4663ff41b5148a0f542e76834032
+      internalID: 1662026680
       vertices: []
       indices: 
       edges: []
@@ -231,11 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AmongUsRed_0: -173827784
-      AmongUsRed_1: 559170318
-      AmongUsRed_3: 1305076220
-      AmongUsRed_2: 109055221
-      AmongUsRed_4: -215105613
+      CapsuleRed_0: 1662026680
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
