@@ -1,4 +1,4 @@
-# Downloads
+# Downloads Game
 https://github.com/ichsnn/unity_2dgame/releases/tag/v1.0.0
 
 # How to Play ?
