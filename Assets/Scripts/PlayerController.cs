@@ -29,6 +29,14 @@ public class PlayerController : MonoBehaviour
     {
         if (horizontalMove > 0.1f || horizontalMove < -0.1f)
         {
+            if (horizontalMove < -0.1f)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            }
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipY = false;
+            }
             rb2d.AddForce(new Vector2(horizontalMove * movementSpeed, 0f), ForceMode2D.Impulse);
         }
 
@@ -37,19 +45,32 @@ public class PlayerController : MonoBehaviour
             rb2d.AddForce(new Vector2(0, verticalMove * jumpForce));
         }
 
-        if(verticalMove < -0.1f && isJump) {
+        if (verticalMove < -0.1f && isJump)
+        {
             rb2d.AddForce(new Vector2(0, verticalMove * jumpForce));
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.gameObject.tag == "Ground") {
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
             isJump = false;
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision) {
-        if(collision.gameObject.tag == "Ground") {
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
             isJump = true;
         }
     }

@@ -22,7 +22,6 @@ public class TopEnemyDetector : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            print("Detected");
             enemy.GetComponent<SpriteRenderer>().flipY = true;
             enemy.GetComponent<Transform>().rotation.Set(0, 0, 0, 0);
             enemy.GetComponent<Collider2D>().enabled = false;
